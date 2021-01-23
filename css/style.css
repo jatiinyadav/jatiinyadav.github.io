@@ -22,7 +22,7 @@ body {
 
 .area {
   margin: 0;
-  background: url(img/intro-bg.png);
+  background: url(/img/intro-bg.png);
   background-size: cover;
   background-attachment: fixed;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
