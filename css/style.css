@@ -149,6 +149,7 @@ body {
 button {
   background: black;
   color: white;
+  cursor: pointer;
   padding: 3px;
   font-family: "sans";
 }
@@ -185,32 +186,12 @@ button {
   position: fixed;
 }
 
-@media only screen and (max-width: 475px) {
-  .btn-area {
-    height: 92px;
-    width: 1500px;
-    top: 2%;
-    left: 3%;
-    z-index: 1000;
-    position: fixed;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .btn-area {
-    height: 92px;
-    width: 1500px;
-    top: 2%;
-    left: 3%;
-    z-index: 1000;
-    position: fixed;
-  }
-}
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   .btn-area {
     height: 92px;
     width: 150px;
     top: 2%;
-    left: 3%;
+    left: 1%;
     z-index: 1000;
     position: fixed;
   }
@@ -546,6 +527,330 @@ section {
 
 /* MY TOOLS RESPONSIVE ENDS */
 
+/* PROJECT SECTION STARTS */
+
+.photo {
+  height: 200px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 {
+  width: 90%;
+  max-width: 120rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+}
+
+.container1 .box1 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.container1 .box1::before {
+  content: "MEME";
+  position: absolute;
+  top: 20px;
+  right: 95px;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.container1 .box1::after {
+  content: "APP";
+  position: absolute;
+  bottom: 20px;
+  left: 110px;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.container1 .box1 .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container1 .box1:hover .name {
+  top: 40px;
+  opacity: 1;
+}
+
+.container1 .box1 .buy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: white;
+  background: #333333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container1 .box1:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.container1 .box1 .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+/* BOX 1 ENDS */
+
+.container1 .box2 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.container1 .box2::before {
+  content: "MYSURU";
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.container1 .box2::after {
+  content: "WEBSITE";
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.container1 .box2 .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container1 .box2:hover .name {
+  top: 40px;
+  opacity: 1;
+}
+
+.container1 .box2 .buy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: white;
+  background: #333333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container1 .box2:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.container1 .box2 .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+/* BOX 2 ENDS */
+
+.container1 .box3 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.container1 .box3::before {
+  content: "BIRTHDAY";
+  position: absolute;
+  top: 20px;
+  right: 55px;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.container1 .box3::after {
+  content: "APP";
+  position: absolute;
+  bottom: 20px;
+  left: 115px;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.container1 .box3 .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container1 .box3:hover .name {
+  top: 40px;
+  opacity: 1;
+}
+
+.container1 .box3 .buy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: white;
+  background: #333333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container1 .box3:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.container1 .box3 .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+/* BOX 3 ENDS */
+
+.container1 .box1:nth-child(1) .circle,
+.container1 .box1:nth-child(1) .buy,
+.container1 .box2:nth-child(2) .circle,
+.container1 .box2:nth-child(2) .buy,
+.container1 .box3:nth-child(3) .circle,
+.container1 .box3:nth-child(3) .buy {
+  background: tomato;
+}
+
+/* PROJECT SECTION ENDS */
+
+/* PROJECT RESPONSIVE STARTS */
+
+@media only screen and (max-width: 376px) {
+  .container1 .box1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container1 .box2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container1 .box3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container1 .box1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container1 .box2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container1 .box3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* PROJECT RESPONSIVE ENDS */
+
 /* TIMELINE SECTION STARTS */
 
 .timeline-section {
@@ -796,35 +1101,47 @@ section {
 .contact {
   font-family: "sans";
   text-align: center;
+  cursor: pointer;
 }
 .contact h3 {
   font-family: "sans";
   text-align: center;
 }
 
+.contact-description {
+  width: 70%;
+  margin: 0 auto;
+}
+
 table {
   width: 90%;
+  cursor: pointer;
 }
 
 a {
   padding: 0.5rem;
   color: #000;
+  cursor: pointer;
 }
 /* Contact Form End */
 
 /* Contact Form responsive */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   table {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .contact-description {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   #contact .timeline-section p {
     font-size: 1.5rem;
   }
-}
+} */
 /* Contact Form Responsive End */
 
 /* Footer Starts */
