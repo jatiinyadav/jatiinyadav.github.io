@@ -4,35 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="sass/sass.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="img/android-chrome-512x512.png">
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+
+        $(window).on('load', function () {
+            $('.preloader').addClass('complete')
+
+        })
+
+        $(window).on('keydown', function (event) {
+            if (event.keyCode == 123) {
+                alert('Disabled!!');
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                alert('Disabled!!')
+                return false;
+            }
+            else if (event.ctrlKey && event.keyCode == 73) {
+                alert('Disabled!!')
+                return false;
+            }
+        });
+        $(document).on("contextmenu", function (e) {
+            alert('Right Click Disabled!!')
+            e.preventDefault();
+        });
+
+    </script>
     <title>Jatin Yadav</title>
 </head>
 
+
 <body>
 
+
     <body id="body"></body>
+
     <div class="container">
 
-        <div class="btn-area">
+        <div class="btn-area" data-aos="fade-up" data-aos-duration="1000">
 
             <button type="button" onclick="dark()" class="btn">NIGHT</button>
             <button type="button" onclick="white()" class="btn">DAY</button>
 
         </div>
+
     </div>
 
     <div class="context">
 
-
         <div class="area">
+
             <ul class="circles">
+
                 <li></li>
                 <li></li>
                 <li></li>
@@ -44,17 +78,29 @@
                 <li></li>
                 <li></li>
                 <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
             </ul>
 
-
             <div class="intro-bg">
+
                 <div class="text-content" data-aos="fade-up" data-aos-duration="1000">
+
                     <h2>Jatin Yadav</h2>
                     <h3>I build things for web.</h3>
 
                 </div>
+
             </div>
+
         </div>
+
     </div>
 
 
@@ -89,24 +135,31 @@
                 </div>
 
                 <ul class="intro-social">
+
                     <li><a data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"
                             href="https://www.facebook.com/profile.php?id=100010626036781&sk=about" target="_blank"><i
                                 class="fa fa-facebook"></i></a></li>
+
                     <li><a data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"
                             href="https://github.com/jatiinyadav" target="_blank"><i class="fa fa-github"></i></a>
                     </li>
+
                     <li><a data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
                             href="https://twitter.com/jatiin_yadav" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
+
                     <li><a data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"
                             href="https://www.linkedin.com/in/jatin-yadav-77409b19b/" target="_blank"><i
                                 class="fa fa-linkedin"></i></a></li>
+
                     <li><a data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500"
                             href="https://www.instagram.com/jatiin_yadav/" target="_blank"><i
                                 class="fa fa-instagram"></i></a>
                     </li>
+
                 </ul><br>
             </div>
+
         </div>
 
     </section>
@@ -208,6 +261,7 @@
     <!-- Projects Starts -->
 
     <section id="myprojects">
+
         <div class="timeline-section">
 
             <h1>PROJECTS</h1>
@@ -228,8 +282,7 @@
                         <a href="https://github.com/jatiinyadav/MemeShareApp" class="buy" target="_blank"
                             style="background: tomato;">Github</a>
 
-
-                        <img class=" product photo " src=" img/meme.jpg" alt="">
+                        <img class=" product photo " src="img/meme.jpg" alt="">
 
                     </div>
 
@@ -320,14 +373,17 @@
                         <div class="timeline-header" data-aos="fade-up" data-aos-duration="1000">
 
                             <p>August 2019 - Present</p>
+
                         </div>
 
                         <div class="timeline-content" data-aos="fade-up" data-aos-duration="1000">
+
                             <h4> ABES Institute of Technology, Ghaziabad </h4>
                             <p>Began my graduation as a Btech aspirant in ABES Institute of Technology,
                                 Affiliated
                                 to
                                 Dr. APJ Abdul Kalam Technical University.</p>
+
                         </div>
 
                     </div>
@@ -341,13 +397,16 @@
                         <div class="timeline-header" data-aos="fade-up" data-aos-duration="1000">
 
                             <p>July 2013 - June 2019</p>
+
                         </div>
 
                         <div class="timeline-content" data-aos="fade-up" data-aos-duration="1000">
+
                             <h4> Suraj Bhan DAV Public School, Vasant Vihar</h4>
                             <p>Completed my secondary schooling from Suraj Bhan DAV Public School, affiliated to
                                 the
                                 Council for the CBSE. <br></p>
+
                         </div>
 
                     </div>
@@ -377,13 +436,14 @@
 
             <div class="contact-description">
 
-                <!-- <p style="float: left; margin-bottom: 3rem;"> <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112221.31646645741!2d77.11851473129465!3d28.482072055640415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1bd6be37ea9%3A0x9800d4b5d8530f44!2sSouth%20Delhi%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1611684082886!5m2!1sen!2sin"
-                            width="350" height="300" frameborder="0" style="border:0;" aria-hidden="false"
-                            tabindex="0"></iframe></p> -->
+                <p style="margin-bottom: 2rem
+                ;"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112221.31646645741!2d77.11851473129465!3d28.482072055640415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1bd6be37ea9%3A0x9800d4b5d8530f44!2sSouth%20Delhi%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1611684082886!5m2!1sen!2sin"
+                        width="250" height="200" frameborder="0" style="border:0;" aria-hidden="false"
+                        tabindex="0"></iframe></p>
 
 
-                <p style="padding-bottom: 3rem;"> Feel free to get in touch with me. I'm always
+                <p style="padding-bottom: 3rem; font-size: 1.1rem; "> Feel free to get in touch with me. I'm always
                     open to discussing new
                     projects,
                     creative
@@ -428,9 +488,74 @@
 
     <!-- Contact Form Ends -->
 
+    <!-- Nav Bar Starts -->
+
+    <div class="toggle">
+
+        <div class="sidebar">
+            <ul>
+                <li><a class="menu" href="index.html" data-text="Home">Home</a></li>
+                <li><a class="menu" href="#about" data-text="About">About</a></li>
+                <li><a class="menu" href="#myTools" data-text="Tools">Tools</a></li>
+                <li><a class="menu" href="#myprojects" data-text="Projects">Projects</a></li>
+                <li><a class="menu" href="#resume" data-text="Timeline">Timeline</a></li>
+                <li><a class="menu" href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.container-icon').click(function () {
+                $('.stick').toggleClass('active')
+                $('.sidebar').toggleClass('active')
+            })
+            $('.sidebar').on('click', function () {
+                // $(".toggle").addClass('.sidebar');
+                $(".sidebar").removeClass("active");
+            });
+        })
+    </script>
+
+    <div class="container-icon">
+        <div class="stick stick-1"></div>
+        <div class="stick stick-2"></div>
+        <div class="stick stick-3"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".container-icon").click(function () {
+                $(".stick").toggleClass(function () {
+                    return $(this).is('.open, .close') ? 'open close' : 'open';
+                });
+            });
+
+            $('.sidebar').on('click', function () {
+                $(".sidebar").collapse('hide');
+                // $(".sidebar").removeClass("active");
+            });
+        });
+    </script>
+
+    <script>
+
+    </script>
+
+    <!-- Nav Bar Ends -->
+
     <footer>
         Crafted with ❤️ by Jatin Yadav
     </footer>
+
 
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
@@ -445,6 +570,14 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Preloader Starts -->
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Preloader Ends -->
 
 </body>
 
