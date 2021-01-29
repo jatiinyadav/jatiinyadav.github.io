@@ -516,7 +516,7 @@
                 $('.sidebar').toggleClass('active')
             })
             $('.sidebar').on('click', function () {
-                // $(".toggle").addClass('.sidebar');
+                $(".toggle").addClass('.sidebar');
                 $(".sidebar").removeClass("active");
             });
         })
@@ -537,11 +537,6 @@
                 $(".stick").toggleClass(function () {
                     return $(this).is('.open, .close') ? 'open close' : 'open';
                 });
-            });
-
-            $('.sidebar').on('click', function () {
-                $(".sidebar").collapse('hide');
-                // $(".sidebar").removeClass("active");
             });
         });
     </script>
