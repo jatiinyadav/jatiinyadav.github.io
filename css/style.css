@@ -788,6 +788,19 @@ section {
   transform: translate3d(-50%, -50%, 0px);
 }
 
+.container1 .box1:hover .product {
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 50px);
+}
+.container1 .box2:hover .product {
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 50px);
+}
+.container1 .box3:hover .product {
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 50px);
+}
+
 /* BOX 1 ENDS */
 
 .container1 .box2 {
@@ -870,7 +883,7 @@ section {
   transition: 0.5s;
   z-index: 11;
   transform-style: preserve-3d;
-  transform: translate3d(-50%, -50%, 50px);
+  transform: translate3d(-50%, -50%, 0px);
 }
 
 /* BOX 2 ENDS */
@@ -955,7 +968,7 @@ section {
   transition: 0.5s;
   z-index: 11;
   transform-style: preserve-3d;
-  transform: translate3d(-50%, -50%, 60px);
+  transform: translate3d(-50%, -50%, 0px);
 }
 
 /* BOX 3 ENDS */
