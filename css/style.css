@@ -1588,6 +1588,6 @@ ul li .menu:hover:before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: tomato;
+  background: #17181f;
   border-radius: 6px;
 }
