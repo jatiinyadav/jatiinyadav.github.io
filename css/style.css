@@ -1165,8 +1165,8 @@ section {
 }
 
 @media only screen and (max-width: 1004px) {
-  #resume {
-    margin-left: 3rem;
+  #timeline-description {
+    margin-left: 2rem;
   }
   #resume .timeline-wrap::before {
     left: -1rem;
