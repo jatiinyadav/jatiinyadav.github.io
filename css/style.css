@@ -32,7 +32,7 @@ body.night {
 
 .toggle {
   position: fixed;
-  top: 20px;
+  top: 40px;
   left: 20px;
   border-radius: 25px;
   border: 2px solid white;
@@ -1143,6 +1143,7 @@ section {
 
 #resume .timeline-content p {
   padding-top: 1.5rem;
+  font-weight: unset;
 }
 
 #resume .timeline-content h4::after {
@@ -1329,6 +1330,25 @@ footer {
 }
 
 /* Footer Ends */
+
+/* .togglemenu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.togglemenu::before {
+  content: "";
+  color: #ffffff;
+  line-height: 40px;
+} */
 
 .sidebar {
   position: fixed;
