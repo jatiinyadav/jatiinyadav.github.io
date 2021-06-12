@@ -18,24 +18,24 @@
             $('.preloader').addClass('complete')
         })
 
-        $(window).on('keydown', function (event) {
-            if (event.keyCode == 123) {
-                // alert('Disabled!!');
-                return false;
-            }
-            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-                // alert('Disabled!!')
-                return false;
-            }
-            else if (event.ctrlKey && event.keyCode == 73) {
-                // alert('Disabled!!')
-                return false;
-            }
-        });
-        $(document).on("contextmenu", function (e) {
-            alert('Right Click Disabled!!')
-            e.preventDefault();
-        });
+        // $(window).on('keydown', function (event) {
+        //     if (event.keyCode == 123) {
+        //         // alert('Disabled!!');
+        //         return false;
+        //     }
+        //     else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        //         // alert('Disabled!!')
+        //         return false;
+        //     }
+        //     else if (event.ctrlKey && event.keyCode == 73) {
+        //         // alert('Disabled!!')
+        //         return false;
+        //     }
+        // });
+        // $(document).on("contextmenu", function (e) {
+        //     alert('Right Click Disabled!!')
+        //     e.preventDefault();
+        // });
 
     </script>
 
@@ -62,16 +62,17 @@
 
     <body id="body"></body>
 
-    <div class="container">
+    <div class="toggle"></div>
 
-        <div class="btn-area" data-aos="fade-up" data-aos-duration="1000">
-
-            <button type="button" onclick="dark()" class="btn">NIGHT</button>
-            <button type="button" onclick="white()" class="btn">DAY</button>
-
-        </div>
-
-    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.toggle').toggleClass('active')
+                $('body').toggleClass('night')
+            })
+        })
+    </script>
 
     <div class="context">
 
@@ -245,20 +246,20 @@
                 </div>
                 <div class="skills-section">
                     <div class="icons">
-                        <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" class="icons"
-                            src="https://img.icons8.com/color/480/000000/git.png" />
+                        <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1200" class="icons"
+                            src="https://1.bp.blogspot.com/-LgTa-xDiknI/X4EflN56boI/AAAAAAAAPuk/24YyKnqiGkwRS9-_9suPKkfsAwO4wHYEgCLcBGAsYHQ/s0/image9.png" />
                     </div>
                 </div>
                 <div class="skills-section">
                     <div class="icons">
                         <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100" class="icons"
-                        src="https://img.icons8.com/color/480/000000/flutter.png" />
+                            src="https://img.icons8.com/color/480/000000/flutter.png" />
                     </div>
                 </div>
                 <div class="skills-section">
                     <div class="icons">
-                        <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1200" class="icons"
-                        src="https://1.bp.blogspot.com/-LgTa-xDiknI/X4EflN56boI/AAAAAAAAPuk/24YyKnqiGkwRS9-_9suPKkfsAwO4wHYEgCLcBGAsYHQ/s0/image9.png" />
+                        <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" class="icons"
+                            src="https://img.icons8.com/color/480/000000/adobe-photoshop.png" />
                     </div>
                 </div>
                 <div class="skills-section">
@@ -277,7 +278,7 @@
         </div>
 
     </section>
-    
+
     <!--My Tools End-->
 
     <!-- Projects Starts -->
@@ -295,16 +296,16 @@
 
             <div class="container1">
 
-                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
 
-                    <div class="box1">
+                    <div class="box3">
 
-                        <h2 class="name">Kotlin</h2>
+                        <h2 class="name">Flutter</h2>
 
-                        <a href="https://github.com/jatiinyadav/MemeShareApp" class="buy" target="_blank"
+                        <a href="https://github.com/jatiinyadav/Covid-19" class="buy" target="_blank"
                             style="background: tomato;">Github</a>
 
-                        <img class=" product photo " src="img/meme.jpg" alt="">
+                        <img class=" product photo " src=" img/app-icon.jpg" alt="">
 
                     </div>
 
@@ -325,16 +326,17 @@
 
                 </div>
 
-                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
 
-                    <div class="box3">
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+
+                    <div class="box1">
 
                         <h2 class="name">Kotlin</h2>
 
-                        <a href="https://github.com/jatiinyadav/HappyBirthdayApp" class="buy" target="_blank"
+                        <a href="https://github.com/jatiinyadav/MemeShareApp" class="buy" target="_blank"
                             style="background: tomato;">Github</a>
 
-                        <img class=" product photo " src=" img/birthday.jpg" alt="">
+                        <img class=" product photo " src="img/meme.jpg" alt="">
 
                     </div>
 
@@ -563,47 +565,47 @@
     </div>
 
     <script>
-        (function ($) {
+            (function ($) {
 
-            $(document).ready(function () {
-                "use strict";
+                $(document).ready(function () {
+                    "use strict";
 
-                //Scroll back to top
+                    //Scroll back to top
 
-                var progressPath = document.querySelector('.progress-wrap path');
-                var pathLength = progressPath.getTotalLength();
-                progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-                progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-                progressPath.style.strokeDashoffset = pathLength;
-                progressPath.getBoundingClientRect();
-                progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-                var updateProgress = function () {
-                    var scroll = $(window).scrollTop();
-                    var height = $(document).height() - $(window).height();
-                    var progress = pathLength - (scroll * pathLength / height);
-                    progressPath.style.strokeDashoffset = progress;
-                }
-                updateProgress();
-                $(window).scroll(updateProgress);
-                var offset = 50;
-                var duration = 1400;
-                jQuery(window).on('scroll', function () {
-                    if (jQuery(this).scrollTop() > offset) {
-                        jQuery('.progress-wrap').addClass('active-progress');
-                    } else {
-                        jQuery('.progress-wrap').removeClass('active-progress');
+                    var progressPath = document.querySelector('.progress-wrap path');
+                    var pathLength = progressPath.getTotalLength();
+                    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+                    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+                    progressPath.style.strokeDashoffset = pathLength;
+                    progressPath.getBoundingClientRect();
+                    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+                    var updateProgress = function () {
+                        var scroll = $(window).scrollTop();
+                        var height = $(document).height() - $(window).height();
+                        var progress = pathLength - (scroll * pathLength / height);
+                        progressPath.style.strokeDashoffset = progress;
                     }
+                    updateProgress();
+                    $(window).scroll(updateProgress);
+                    var offset = 50;
+                    var duration = 1400;
+                    jQuery(window).on('scroll', function () {
+                        if (jQuery(this).scrollTop() > offset) {
+                            jQuery('.progress-wrap').addClass('active-progress');
+                        } else {
+                            jQuery('.progress-wrap').removeClass('active-progress');
+                        }
+                    });
+                    jQuery('.progress-wrap').on('click', function (event) {
+                        event.preventDefault();
+                        jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                        return false;
+                    })
+
+
                 });
-                jQuery('.progress-wrap').on('click', function (event) {
-                    event.preventDefault();
-                    jQuery('html, body').animate({ scrollTop: 0 }, duration);
-                    return false;
-                })
 
-
-            });
-
-        })(jQuery);
+            })(jQuery);
     </script>
 
     <!-- Back to top ends -->
@@ -673,7 +675,7 @@
     <!-- Nav Bar Ends -->
 
     <footer>
-        &#x3c; &#47; &#x3e; with ❤️ by Jatin Yadav
+        &#x3c; &#47; &#x3e; with ❤️ & ☕ by Jatin Yadav
     </footer>
 
 
@@ -690,10 +692,25 @@
             max: 25,
             speed: 400
         });
+        $(document).ready(function () {
+            $('body, html').css({
+                overflow: 'hidden',
+            });
+            setTimeout(function () {
+                $('.loader').fadeOut('slow', function () {
+                    $('body, html').css({
+                        overflow: 'auto',
+                        height: 'auto'
+                    });
+                });
+            }, 100);
+        });
     </script>
     <script>
         AOS.init();
     </script>
+
+
 
     <!-- Preloader Starts -->
 

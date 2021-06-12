@@ -3,6 +3,15 @@ body {
   font-family: "sans";
   color: white;
   background: url(../img/bg1.png);
+  transition: 0.5s;
+}
+
+body.night {
+  background: url(../img/bh3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000;
+  transition: 0.9s;
 }
 
 #body {
@@ -21,12 +30,37 @@ body {
   src: url(../font/sans.ttf);
 }
 
-button {
-  background: black;
-  color: white;
+.toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 25px;
+  border: 2px solid white;
+  width: 50px;
+  height: 25px;
   cursor: pointer;
-  padding: 3px;
-  font-family: "sans";
+  transition: 0.5s;
+}
+
+.toggle:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 15px;
+  height: 14px;
+  background: url(../img/crescent-moon.png);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.toggle.active {
+  border: 2px solid #00151f;
+}
+
+.toggle.active:before {
+  left: 28px;
+  background: url(../img/sun.png);
 }
 
 .intro-bg {
@@ -36,22 +70,6 @@ button {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-}
-
-.dark {
-  background: url(../img/bg1.png);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-  transition: 0.9s;
-}
-
-.white {
-  background: url(../img/bh3.png);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #000;
-  transition: 0.9s;
 }
 
 .loader {
@@ -882,7 +900,7 @@ section {
 }
 
 .container1 .box3::before {
-  content: "BIRTHDAY";
+  content: "COVID-19";
   position: absolute;
   top: 20px;
   right: 55px;
@@ -1312,33 +1330,6 @@ footer {
 
 /* Footer Ends */
 
-.toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  min-width: 40px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.5s;
-  padding: -10px 1px;
-  letter-spacing: 0.1rem;
-  background: black;
-  /* border: 1px solid #fff; */
-  border-radius: 5px;
-}
-
-.toggle:before {
-  content: "";
-  color: #ffffff;
-  line-height: 40px;
-}
-
-.toggle.active:before {
-  content: "";
-  color: #ffffff;
-  line-height: 40px;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -1619,6 +1610,7 @@ ul li .menu:hover:before {
   line-height: 46px;
   font-size: 24px;
   opacity: 0;
+  background-clip: border-box;
   -webkit-background-clip: text;
   background-color: tomato;
   -webkit-text-fill-color: transparent;
