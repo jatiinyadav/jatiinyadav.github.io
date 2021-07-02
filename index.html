@@ -18,24 +18,24 @@
             $('.preloader').addClass('complete')
         })
 
-        // $(window).on('keydown', function (event) {
-        //     if (event.keyCode == 123) {
-        //         // alert('Disabled!!');
-        //         return false;
-        //     }
-        //     else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-        //         // alert('Disabled!!')
-        //         return false;
-        //     }
-        //     else if (event.ctrlKey && event.keyCode == 73) {
-        //         // alert('Disabled!!')
-        //         return false;
-        //     }
-        // });
-        // $(document).on("contextmenu", function (e) {
-        //     alert('Right Click Disabled!!')
-        //     e.preventDefault();
-        // });
+        $(window).on('keydown', function (event) {
+            if (event.keyCode == 123) {
+                // alert('Disabled!!');
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                // alert('Disabled!!')
+                return false;
+            }
+            else if (event.ctrlKey && event.keyCode == 73) {
+                // alert('Disabled!!')
+                return false;
+            }
+        });
+        $(document).on("contextmenu", function (e) {
+            alert('Right Click Disabled!!')
+            e.preventDefault();
+        });
 
     </script>
 
