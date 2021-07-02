@@ -18,24 +18,24 @@
             $('.preloader').addClass('complete')
         })
 
-        $(window).on('keydown', function (event) {
-            if (event.keyCode == 123) {
-                // alert('Disabled!!');
-                return false;
-            }
-            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-                // alert('Disabled!!')
-                return false;
-            }
-            else if (event.ctrlKey && event.keyCode == 73) {
-                // alert('Disabled!!')
-                return false;
-            }
-        });
-        $(document).on("contextmenu", function (e) {
-            alert('Right Click Disabled!!')
-            e.preventDefault();
-        });
+        // $(window).on('keydown', function (event) {
+        //     if (event.keyCode == 123) {
+        //         // alert('Disabled!!');
+        //         return false;
+        //     }
+        //     else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        //         // alert('Disabled!!')
+        //         return false;
+        //     }
+        //     else if (event.ctrlKey && event.keyCode == 73) {
+        //         // alert('Disabled!!')
+        //         return false;
+        //     }
+        // });
+        // $(document).on("contextmenu", function (e) {
+        //     alert('Right Click Disabled!!')
+        //     e.preventDefault();
+        // });
 
     </script>
 
@@ -476,6 +476,31 @@
     </section>
     <!--Timeline Ends-->
 
+    <!-- Video Section Starts -->
+    <section id="resume">
+
+        <div class="container">
+
+            <div class="timeline-section">
+
+                <h1>{ MEDIA }</h1>
+                <p>A short video clip.</p>
+
+            </div>
+
+            <div class="media-video">
+
+                <video width="450" controls poster="img/Video-Thumbnail.png">
+                    <source src="Jatin_Yadav-Video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Video Section Ends -->
+
     <!--Contact Form Starts-->
 
     <section id="contact">
@@ -624,7 +649,7 @@
                 <li><a class="menu" href="#myprojects" data-text="Projects">Projects</a></li>
                 <li><a class="menu" href="#resume" data-text="Timeline">Timeline</a></li>
                 <li><a class="menu" href="#contact" data-text="Contact">Contact</a></li>
-                <li><a class="menu" href="Resume-Jatin_Yadav.pdf" data-text="Resume">Resume</a></li>
+                <li><a class="menu" href="Jatin_Yadav-Resume.pdf" data-text="Resume">Resume</a></li>
 
             </ul>
 

@@ -1268,6 +1268,17 @@ section {
 
 /* TIMELINE RESPONSIVE ENDS */
 
+/* VIDEO RESPONSIVE STARTS */
+
+@media only screen and (max-width: 600px) {
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* VIDEO RESPONSIVE ENDS */
+
 /*CONTACT FORM STARTS */
 
 .contact {
