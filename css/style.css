@@ -295,24 +295,6 @@ body.night {
   }
 }
 
-.btn-area {
-  height: 92px;
-  width: 120px;
-  top: 5%;
-  left: 0%;
-  z-index: 1;
-  position: fixed;
-}
-
-@media only screen and (max-width: 600px) {
-  .btn-area {
-    height: 92px;
-    width: 110px;
-    top: 5%;
-    position: fixed;
-  }
-}
-
 .text-content h2 {
   font-size: 10rem;
   padding: 1rem;
@@ -348,60 +330,6 @@ body.night {
   }
 }
 
-/* INTRO START */
-
-#intro {
-  background: url(img/bodybackground.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* INTRO SECTION  RESPONSIVE START */
-
-@media only screen and (max-width: 1024px) {
-  .intro-heading {
-    font-size: 8rem;
-  }
-  .intro-subheading {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .intro-heading {
-    padding-top: 14rem;
-    font-size: 5.5rem;
-  }
-  .intro-subheading {
-    font-size: 1.3rem;
-    padding-bottom: 20rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .intro-heading {
-    padding-top: 15rem;
-    font-size: 4.5rem;
-  }
-  .intro-subheading {
-    font-size: 1.1rem;
-    padding-bottom: 20rem;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .intro-heading {
-    padding-top: 15rem;
-    font-size: 3.5rem;
-  }
-  .intro-subheading {
-    font-size: 1rem;
-    padding-bottom: 20rem;
-  }
-}
-
-/* INTRO SECTION  RESPONSIVE END */
-
 /* ABOUT SECTION STARTS */
 
 section {
@@ -410,6 +338,15 @@ section {
 
 #about {
   height: 100%;
+}
+
+.container {
+  width: 60%;
+  max-width: 67rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
 }
 
 #about.container {
@@ -423,15 +360,6 @@ section {
   color: tomato;
   padding-top: 1rem;
   padding-bottom: 3rem;
-}
-
-.container {
-  width: 60%;
-  max-width: 67rem;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
 }
 
 .intro-info img {
@@ -466,7 +394,7 @@ section {
   color: #000;
 }
 
-.intro-social .intro-social li a:visited {
+.intro-social li a:visited {
   color: black;
   transition: 0.3s;
 }
@@ -690,8 +618,8 @@ section {
 
 #projects {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .container1 {
@@ -988,7 +916,7 @@ section {
 
 /* PROJECT RESPONSIVE STARTS */
 
-@media only screen and (max-width: 376px) {
+/* @media only screen and (max-width: 376px) {
   .container1 .box1 {
     margin-left: 0;
     margin-right: 0;
@@ -1015,7 +943,7 @@ section {
     margin-left: 0;
     margin-right: 0;
   }
-}
+} */
 
 /* PROJECT RESPONSIVE ENDS */
 
