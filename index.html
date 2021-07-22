@@ -2,52 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="img/android-chrome-512x512.png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" href="img/android-chrome-512x512.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
 
-        $(window).on('load', function () {
-            $('.preloader').addClass('complete')
-        })
+            $(window).on('load', function () {
+                $('.preloader').addClass('complete')
+            })
 
-        $(window).on('keydown', function (event) {
-            if (event.keyCode == 123) {
-                // alert('Disabled!!');
-                return false;
-            }
-            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-                // alert('Disabled!!')
-                return false;
-            }
-            else if (event.ctrlKey && event.keyCode == 73) {
-                // alert('Disabled!!')
-                return false;
-            }
-        });
-        $(document).on("contextmenu", function (e) {
-            alert('Right Click Disabled!!')
-            e.preventDefault();
-        });
+            $(window).on('keydown', function (event) {
+                if (event.keyCode == 123) {
+                    // alert('Disabled!!');
+                    return false;
+                }
+                else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                    // alert('Disabled!!')
+                    return false;
+                }
+                else if (event.ctrlKey && event.keyCode == 73) {
+                    // alert('Disabled!!')
+                    return false;
+                }
+            });
+            $(document).on("contextmenu", function (e) {
+                alert('Right Click Disabled!!')
+                e.preventDefault();
+            });
 
-    </script>
+        </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB2MQZ8GQX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB2MQZ8GQX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'G-LB2MQZ8GQX');
-    </script>
+            gtag('config', 'G-LB2MQZ8GQX');
+        </script>
+    </header>
 
     <title>Jatin Yadav</title>
 </head>
@@ -55,80 +56,83 @@
 
 <body>
 
+    <!-- Intro Section Starts -->
 
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
+    <article id="front-page">
+        <div class="preloader">
+            <div class="loader"></div>
+        </div>
 
-    <body id="body"></body>
+        <body id="body"></body>
 
-    <div class="daynightmode"></div>
+        <div class="daynightmode"></div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.daynightmode').click(function () {
-                $('.daynightmode').toggleClass('active')
-                $('body').toggleClass('night')
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.daynightmode').click(function () {
+                    $('.daynightmode').toggleClass('active')
+                    $('body').toggleClass('night')
+                })
             })
-        })
-    </script>
+        </script>
 
-    <div class="context">
+        <div class="context">
 
-        <div class="area">
+            <div class="area">
 
-            <ul class="circles">
+                <ul class="circles">
 
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
 
-            </ul>
+                </ul>
 
-            <div class="intro-bg">
+                <div class="intro-bg">
 
-                <div class="text-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="text-content" data-aos="fade-up" data-aos-duration="1000">
 
-                    <h2>Jatin Yadav</h2>
-                    <p>I build things for web.</p>
+                        <h2>Jatin Yadav</h2>
+                        <p>I build things for web.</p>
+
+                    </div>
 
                 </div>
 
             </div>
 
         </div>
-
-    </div>
-
+    </article>
 
     <!--Intro Section End-->
+
 
     <!--About Section Start-->
 
     <section id="about">
 
-        <div class="container">
+        <div class="container-about">
 
             <h1>{ ABOUT }</h1>
             <p class="para">Let me introduce myself.</p>
 
-            <div style="margin-top: 1rem;">
+            <div class="wrapper">
 
                 <div class="intro-info">
 
@@ -136,9 +140,9 @@
 
                 </div>
 
-                <div class="about-description">
+                <div class="about-info">
 
-                    <p class="lead" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
 
                         Hello! I'm Jatin, an engineering student who enjoys building things that
                         live on the internet. I develop exceptional websites and web apps that provide
@@ -149,11 +153,11 @@
                     </p>
 
 
-                    <ul class="intro-social">
 
-                        <!-- <li><a data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"
-                                href="https://www.facebook.com/profile.php?id=100010626036781&sk=about"
-                                target="_blank"><i class="fa fa-facebook"></i></a></li> -->
+                    <!-- <li><a data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"
+                                                    href="https://www.facebook.com/profile.php?id=100010626036781&sk=about"
+                                                    target="_blank"><i class="fa fa-facebook"></i></a></li> -->
+                    <ul class="intro-social">
 
                         <li><a data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"
                                 href="https://github.com/jatiinyadav" target="_blank"><i class="fa fa-github"></i></a>
@@ -183,9 +187,10 @@
 
     </section>
 
-    <!--About End-->
+    <!--About Section End-->
 
-    <!--My Tools Start-->
+
+    <!--My Tools Section Start-->
 
     <section id="myTools">
 
@@ -276,9 +281,10 @@
 
     </section>
 
-    <!--My Tools End-->
+    <!--My Tools Section End-->
 
-    <!-- Projects Starts -->
+
+    <!-- Projects Section Starts -->
 
     <section id="myprojects">
 
@@ -345,11 +351,10 @@
 
     </section>
 
-    <!-- Projects End -->
+    <!-- Projects Section End -->
 
 
-    <!--Timeline Starts-->
-
+    <!--Timeline Section Starts-->
 
     <section id="resume">
 
@@ -471,34 +476,11 @@
         </div>
 
     </section>
-    <!--Timeline Ends-->
 
-    <!-- Video Section Starts -->
-    <!-- <section id="resume">
+    <!--Timeline Section Ends-->
 
-        <div class="container">
 
-            <div class="timeline-section">
-
-                <h1>{ MEDIA }</h1>
-                <p>A short video clip.</p>
-
-            </div>
-
-            <div class="media-video">
-
-                <video width="450" controls poster="img/Video-Thumbnail.png">
-                    <source src="Jatin_Yadav-Video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-
-            </div>
-        </div>
-
-    </section> -->
-    <!-- Video Section Ends -->
-
-    <!--Contact Form Starts-->
+    <!--Contact Section Starts-->
 
     <section id="contact">
 
@@ -576,139 +558,158 @@
         </div>
     </section>
 
-    <!-- Contact Form Ends -->
+    <!-- Contact Section Ends -->
 
-    <!-- Back to top starts -->
 
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
+    <!-- Back to top Section starts -->
 
-    <script>
-            (function ($) {
+    <article id="back-to-top">
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
 
-                $(document).ready(function () {
-                    "use strict";
+        <script>
+                (function ($) {
 
-                    //Scroll back to top
+                    $(document).ready(function () {
+                        "use strict";
 
-                    var progressPath = document.querySelector('.progress-wrap path');
-                    var pathLength = progressPath.getTotalLength();
-                    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-                    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-                    progressPath.style.strokeDashoffset = pathLength;
-                    progressPath.getBoundingClientRect();
-                    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-                    var updateProgress = function () {
-                        var scroll = $(window).scrollTop();
-                        var height = $(document).height() - $(window).height();
-                        var progress = pathLength - (scroll * pathLength / height);
-                        progressPath.style.strokeDashoffset = progress;
-                    }
-                    updateProgress();
-                    $(window).scroll(updateProgress);
-                    var offset = 50;
-                    var duration = 1400;
-                    jQuery(window).on('scroll', function () {
-                        if (jQuery(this).scrollTop() > offset) {
-                            jQuery('.progress-wrap').addClass('active-progress');
-                        } else {
-                            jQuery('.progress-wrap').removeClass('active-progress');
+                        //Scroll back to top
+
+                        var progressPath = document.querySelector('.progress-wrap path');
+                        var pathLength = progressPath.getTotalLength();
+                        progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+                        progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+                        progressPath.style.strokeDashoffset = pathLength;
+                        progressPath.getBoundingClientRect();
+                        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+                        var updateProgress = function () {
+                            var scroll = $(window).scrollTop();
+                            var height = $(document).height() - $(window).height();
+                            var progress = pathLength - (scroll * pathLength / height);
+                            progressPath.style.strokeDashoffset = progress;
                         }
+                        updateProgress();
+                        $(window).scroll(updateProgress);
+                        var offset = 50;
+                        var duration = 1400;
+                        jQuery(window).on('scroll', function () {
+                            if (jQuery(this).scrollTop() > offset) {
+                                jQuery('.progress-wrap').addClass('active-progress');
+                            } else {
+                                jQuery('.progress-wrap').removeClass('active-progress');
+                            }
+                        });
+                        jQuery('.progress-wrap').on('click', function (event) {
+                            event.preventDefault();
+                            jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                            return false;
+                        })
+
+
                     });
-                    jQuery('.progress-wrap').on('click', function (event) {
-                        event.preventDefault();
-                        jQuery('html, body').animate({ scrollTop: 0 }, duration);
-                        return false;
-                    })
+
+                })(jQuery);
+        </script>
+    </article>
+
+    <!-- Back to top section ends -->
 
 
-                });
+    <!-- Nav Bar Section Starts -->
 
-            })(jQuery);
-    </script>
+    <article id="navigation-menu">
+        <div class="togglemenu">
 
-    <!-- Back to top ends -->
+            <div class="sidebar">
 
-    <!-- Nav Bar Starts -->
+                <ul>
 
-    <div class="togglemenu">
+                    <!-- <li><a class="menu" href="index.html" data-text="Home">Home</a></li> -->
+                    <li><a class="menu" href="#about" data-text="About">About</a></li>
+                    <li><a class="menu" href="#myTools" data-text="Tools">Tools</a></li>
+                    <li><a class="menu" href="#myprojects" data-text="Projects">Projects</a></li>
+                    <li><a class="menu" href="#resume" data-text="Timeline">Timeline</a></li>
+                    <li><a class="menu" href="#contact" data-text="Contact">Contact</a></li>
+                    <li><a class="menu" href="Jatin_Yadav-Resume.pdf" data-text="Resume">Resume</a></li>
 
-        <div class="sidebar">
+                </ul>
 
-            <ul>
-
-                <!-- <li><a class="menu" href="index.html" data-text="Home">Home</a></li> -->
-                <li><a class="menu" href="#about" data-text="About">About</a></li>
-                <li><a class="menu" href="#myTools" data-text="Tools">Tools</a></li>
-                <li><a class="menu" href="#myprojects" data-text="Projects">Projects</a></li>
-                <li><a class="menu" href="#resume" data-text="Timeline">Timeline</a></li>
-                <li><a class="menu" href="#contact" data-text="Contact">Contact</a></li>
-                <li><a class="menu" href="Jatin_Yadav-Resume.pdf" data-text="Resume">Resume</a></li>
-
-            </ul>
+            </div>
 
         </div>
 
-    </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.container-icon').click(function () {
-                $('.stick').toggleClass('active')
-                $('.sidebar').toggleClass('active')
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.container-icon').click(function () {
+                    $('.stick').toggleClass('active')
+                    $('.sidebar').toggleClass('active')
+                })
+                $('.sidebar').on('click', function () {
+                    // $(".toggle").addClass('.sidebar');
+                    $(".sidebar").removeClass("active");
+                })
+                $('.sidebar>ul>li>menu').on('click', function () {
+                    // $(".toggle").addClass('.sidebar');
+                    $(".sidebar").removeClass(".stick");
+                });
             })
-            $('.sidebar').on('click', function () {
-                // $(".toggle").addClass('.sidebar');
-                $(".sidebar").removeClass("active");
-            })
-            $('.sidebar>ul>li>menu').on('click', function () {
-                // $(".toggle").addClass('.sidebar');
-                $(".sidebar").removeClass(".stick");
-            });
-        })
-    </script>
+        </script>
 
-    <div class="container-icon" data-aos="fade-up" data-aos-duration="1000">
-        <div class="stick stick-1"></div>
-        <div class="stick stick-2"></div>
-        <div class="stick stick-3"></div>
-    </div>
+        <div class="container-icon" data-aos="fade-up" data-aos-duration="1000">
+            <div class="stick stick-1"></div>
+            <div class="stick stick-2"></div>
+            <div class="stick stick-3"></div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-    <script>
-        $(document).ready(function () {
-            $(".container-icon").click(function () {
-                $(".stick").toggleClass(function () {
-                    return $(this).is('.open, .close') ? 'close, close' : 'close';
+        <script>
+            $(document).ready(function () {
+                $(".container-icon").click(function () {
+                    $(".stick").toggleClass(function () {
+                        return $(this).is('.open, .close') ? 'close, close' : 'close';
+                    });
                 });
             });
-        });
-    </script>
+        </script>
 
-    <!-- Nav Bar Ends -->
+    </article>
 
-    <footer>
-        &#x3c; &#47; &#x3e; with ❤️ & ☕ by Jatin Yadav
-    </footer>
+    <!-- Nav Bar Section Ends -->
 
+
+    <!-- Footer Section Starts -->
+
+    <article id="footer-here">
+        <footer>
+            &#x3c; &#47; &#x3e; with ❤️ & ☕ by Jatin Yadav
+        </footer>
+    </article>
+
+    <!-- Footer Section Ends -->
+
+
+    <!-- Preloader Section Starts -->
+
+    <article id="preloader-here">
+        <div class="preloader">
+            <div class="loader"></div>
+        </div>
+    </article>
+
+    <!-- Preloader Section Ends -->
 
 
     <!-- Scripts -->
 
-    <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/vanilla-tilt.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".box1, .box2, .box3"), {
             max: 25,
@@ -734,14 +735,31 @@
 
 
 
-    <!-- Preloader Starts -->
-
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Preloader Ends -->
-
 </body>
 
 </html>
+
+<!-- Video Section Starts -->
+<!-- <section id="resume">
+
+        <div class="container">
+
+            <div class="timeline-section">
+
+                <h1>{ MEDIA }</h1>
+                <p>A short video clip.</p>
+
+            </div>
+
+            <div class="media-video">
+
+                <video width="450" controls poster="img/Video-Thumbnail.png">
+                    <source src="Jatin_Yadav-Video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
+
+    </section> -->
+<!-- Video Section Ends -->
