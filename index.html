@@ -2,52 +2,50 @@
 <html lang="en">
 
 <head>
-    <header>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="icon" href="img/android-chrome-512x512.png">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script type="text/javascript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
 
-            $(window).on('load', function () {
-                $('.preloader').addClass('complete')
-            })
+        $(window).on('load', function () {
+            $('.preloader').addClass('complete')
+        })
 
-            $(window).on('keydown', function (event) {
-                if (event.keyCode == 123) {
-                    // alert('Disabled!!');
-                    return false;
-                }
-                else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-                    // alert('Disabled!!')
-                    return false;
-                }
-                else if (event.ctrlKey && event.keyCode == 73) {
-                    // alert('Disabled!!')
-                    return false;
-                }
-            });
-            $(document).on("contextmenu", function (e) {
-                alert('Right Click Disabled!!')
-                e.preventDefault();
-            });
+        $(window).on('keydown', function (event) {
+            if (event.keyCode == 123) {
+                // alert('Disabled!!');
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                // alert('Disabled!!')
+                return false;
+            }
+            else if (event.ctrlKey && event.keyCode == 73) {
+                // alert('Disabled!!')
+                return false;
+            }
+        });
+        $(document).on("contextmenu", function (e) {
+            alert('Right Click Disabled!!')
+            e.preventDefault();
+        });
 
-        </script>
+    </script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB2MQZ8GQX"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB2MQZ8GQX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-            gtag('config', 'G-LB2MQZ8GQX');
-        </script>
+        gtag('config', 'G-LB2MQZ8GQX');
+    </script>
     </header>
 
     <title>Jatin Yadav</title>
@@ -58,66 +56,66 @@
 
     <!-- Intro Section Starts -->
 
-    <article id="front-page">
-        <div class="preloader">
-            <div class="loader"></div>
-        </div>
 
-        <body id="body"></body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
 
-        <div class="daynightmode"></div>
+    <body id="body"></body>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.daynightmode').click(function () {
-                    $('.daynightmode').toggleClass('active')
-                    $('body').toggleClass('night')
-                })
+    <div class="daynightmode"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.daynightmode').click(function () {
+                $('.daynightmode').toggleClass('active')
+                $('body').toggleClass('night')
             })
-        </script>
+        })
+    </script>
 
-        <div class="context">
+    <div class="context">
 
-            <div class="area">
+        <div class="area">
 
-                <ul class="circles">
+            <ul class="circles">
 
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
 
-                </ul>
+            </ul>
 
-                <div class="intro-bg">
+            <div class="intro-bg">
 
-                    <div class="text-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="text-content" data-aos="fade-up" data-aos-duration="1000">
 
-                        <h2>Jatin Yadav</h2>
-                        <p>I build things for web.</p>
-
-                    </div>
+                    <h2>Jatin Yadav</h2>
+                    <p>I build things for web.</p>
 
                 </div>
 
             </div>
 
         </div>
+
+    </div>
     </article>
 
     <!--Intro Section End-->
