@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "sans";
-  color: white;
+  color: #f8f8ff;
   background: url(../img/bg1.png);
   transition: 0.5s;
 }
@@ -10,8 +10,12 @@ body.night {
   background: url(../img/bh3.png);
   background-size: cover;
   background-attachment: fixed;
-  color: #000;
+  color: #292929;
   transition: 0.9s;
+}
+
+body.night .intro-bg .text-content h2 {
+  color: #1c1c1c;
 }
 
 #body {
@@ -45,6 +49,7 @@ body.night {
 
 .daynightmode:before {
   content: "";
+  font-family: fontAwesome;
   position: absolute;
   top: 3px;
   left: 4px;
@@ -60,7 +65,9 @@ body.night {
 }
 
 .daynightmode.active:before {
+  content: "";
   left: 28px;
+  font-family: fontAwesome;
   background: url(../img/sun.png);
 }
 
@@ -665,10 +672,26 @@ section {
   border-radius: 20px;
 }
 
-#projects {
+.projects-items {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.projects-info img {
+  width: 35px;
+  height: 100%;
+  margin: 1rem 0;
+}
+
+.projects-items:last-child {
+  margin-bottom: 0;
+}
+
+.projects-header h1 {
+  margin: 1rem 0;
 }
 
 .container1 {
@@ -1593,11 +1616,15 @@ ul li .menu:hover:before {
 }
 .progress-wrap::after {
   position: absolute;
-  font-family: "unicons";
-  content: "\21E1";
+  content: "\f062";
+  font-family: fontAwesome;
   text-align: center;
   line-height: 46px;
-  font-size: 24px;
+  font-size: 18px;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-color: white;
+  -webkit-text-fill-color: transparent;
   /* color: #ecedf3; */
   left: 0;
   top: 0;
@@ -1614,11 +1641,11 @@ ul li .menu:hover:before {
 }
 .progress-wrap::before {
   position: absolute;
-  font-family: "unicons";
-  content: "\21E1";
+  content: "\f062";
+  font-family: fontAwesome;
   text-align: center;
   line-height: 46px;
-  font-size: 24px;
+  font-size: 18px;
   opacity: 0;
   background-clip: border-box;
   -webkit-background-clip: text;
