@@ -81,7 +81,6 @@ body.night {
   width: 40px;
   border: 3px solid #262626;
   border-radius: 5px;
-  /* border-radius: 5px; */
   box-sizing: border-box;
   height: 40px;
   animation: animate-loader 2s linear infinite;
@@ -182,7 +181,7 @@ body.night {
 
 .area {
   margin: 0;
-  background: url(../img/home-bg.png);
+  /* background: url(../img/home-bg.png); */
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -299,11 +298,11 @@ body.night {
   font-size: 10rem;
   padding: 1rem;
   text-align: center;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 .text-content p {
   font-size: 1.5rem;
-  color: wheat;
+  /* color: w; */
   text-align: center;
 }
 
@@ -1072,7 +1071,7 @@ section {
   text-align: center;
   color: #ffffff;
   position: absolute;
-  left: 31.2%;
+  left: 30.8%;
   top: 1.1rem;
   margin-left: -2.3rem;
 }
@@ -1116,6 +1115,7 @@ section {
 
 #resume .timeline-content h4 {
   color: tomato;
+  letter-spacing: 0.05rem;
   position: relative;
   padding-bottom: 0.7rem;
 }
@@ -1270,7 +1270,7 @@ section {
 }
 
 .contact-description {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
