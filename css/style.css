@@ -694,6 +694,18 @@ section {
   margin: 1rem 0;
 }
 
+@media (max-width: 900px) {
+  .projects-items {
+    flex-direction: column;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  /* .projects-details .projects-info {
+    width: 120%;
+  } */
+}
+
 .container1 {
   width: 90%;
   max-width: 120rem;
