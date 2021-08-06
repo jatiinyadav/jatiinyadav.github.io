@@ -686,24 +686,49 @@ section {
   margin: 1rem 0;
 }
 
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.projects-header .header-images a {
+  padding: 0;
+}
+.projects-header .header-images img {
+  width: 35px;
+  height: 90%;
+}
+
+.projects-details {
+  margin-right: 2rem;
+}
+
+.projects-items .yt-link {
+  margin-right: 2rem;
+}
+
 .projects-items:last-child {
   margin-bottom: 0;
 }
 
-.projects-header h1 {
-  margin: 1rem 0;
-}
-
 @media (max-width: 900px) {
+  iframe {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
   .projects-items {
     flex-direction: column;
   }
-  iframe {
-    max-width: 100%;
+  .projects-items .yt-link {
+    margin-right: 0rem;
   }
-  /* .projects-details .projects-info {
-    width: 120%;
-  } */
+  .projects-details {
+    margin-right: 0rem;
+  }
+  .projects-items .projects-iframe {
+    flex: 1 1 0%;
+  }
 }
 
 .container1 {
@@ -1606,8 +1631,8 @@ ul li .menu:hover:before {
 
 .progress-wrap {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 25px;
+  bottom: 25px;
   height: 46px;
   width: 46px;
   cursor: pointer;
