@@ -713,21 +713,24 @@ section {
 }
 
 @media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+
   iframe {
     max-width: 100%;
     margin-bottom: 2rem;
   }
   .projects-items {
     flex-direction: column;
+    margin-bottom: 2rem;
+    /* width: 100%; */
   }
   .projects-items .yt-link {
     margin-right: 0rem;
   }
   .projects-details {
     margin-right: 0rem;
-  }
-  .projects-items .projects-iframe {
-    flex: 1 1 0%;
   }
 }
 
