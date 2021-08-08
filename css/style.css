@@ -1663,9 +1663,8 @@ ul li .menu:hover:before {
   font-size: 18px;
   background-clip: border-box;
   -webkit-background-clip: text;
-  background-color: white;
+  background-color: tomato;
   -webkit-text-fill-color: transparent;
-  /* color: #ecedf3; */
   left: 0;
   top: 0;
   height: 46px;

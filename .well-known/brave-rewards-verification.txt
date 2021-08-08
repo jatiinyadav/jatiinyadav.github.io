@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: jatiinyadav.github.io
-Token: e2bedb1b1959819d76b441ee92fe49e927e3ce9da71c4b1fdbe845b7cce3bf23
