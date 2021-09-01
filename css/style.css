@@ -311,6 +311,12 @@ img {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 600px) {
+  .intro-social {
+    text-align: center;
+  }
+}
+
 .fa-facebook {
   padding: 5px 10px;
   border-radius: 10%;
@@ -1134,9 +1140,9 @@ a {
 /* Footer Starts */
 
 footer {
-  background: #131313;
+  /* background: #131313; */
   text-align: center;
-  color: white;
+  /* color: white; */
   font-size: 0.8rem;
   font-family: "sans";
   padding: 20px;
