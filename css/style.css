@@ -135,11 +135,27 @@ section {
 
 .container {
   width: 80%;
-  max-width: 67rem;
+  max-width: 75rem;
   height: 100%;
   margin: 0 auto;
   position: relative;
   text-align: center;
+}
+
+.container .projects-here {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dp {
+  flex: 1;
+  margin-right: 3rem;
+}
+
+.sanam {
+  flex: 1;
 }
 
 .profile-image {
@@ -341,12 +357,12 @@ img {
 }
 
 .container .projects-cards .align-flex {
-  width: 400px;
-  height: 450px;
+  width: 480px;
+  height: 500px;
   border-radius: 15px;
   padding: 1rem;
-  background-image: linear-gradient(145deg, #2a2a2a, #232323);
-  box-shadow: 5px 5px 8px #1c1c1c, -5px -5px 8px #323232;
+  /* background-image: linear-gradient(145deg, #2a2a2a, #232323); */
+  box-shadow: 5px 5px 8px #1c1c1c, 5px 5px 8px #323232;
 }
 
 body.night .container .projects-cards .align-flex {
@@ -356,10 +372,10 @@ body.night .container .projects-cards .align-flex {
 }
 
 .container .projects-cards .align-flex .header-img {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
-  height: 200px;
-  background-color: #f7f8f8;
+  height: 250px;
+  background-color: white;
   border-radius: 10px;
   margin-bottom: 1.5rem;
 }
