@@ -45,7 +45,7 @@
 
         </div>
 
-        <div class="arrow">
+        <div class="arrow" id="arrow">
             <a href="#about">
                 <span></span>
                 <span></span>
@@ -541,7 +541,7 @@
                         updateProgress();
                         $(window).scroll(updateProgress);
                         var offset = 50;
-                        var duration = 100;
+                        var duration = 2000;
                         jQuery(window).on('scroll', function () {
                             if (jQuery(this).scrollTop() > offset) {
                                 jQuery('.progress-wrap').addClass('active-progress');

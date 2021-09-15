@@ -1,14 +1,19 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 300) {
       $("#scroll").fadeIn();
     } else {
       $("#scroll").fadeOut();
     }
   });
-  $("#scroll").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
+
+  $("#arrow").on("click", function () {
+    $("html, body").animate(
+      {
+        scrollTop: 700,
+      },
+      1500
+    );
   });
 });
 
