@@ -1,13 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "sans";
   color: #f8f8ff;
-  background: url(../img/intro-bg-dark.png);
+  background: url(../img/intro-bg-dark.webp);
   transition: 0.5s;
 }
 
 body.night {
-  background: url(../img/intro-bg-light.png);
+  background: url(../img/intro-bg-light.webp);
   background-size: cover;
   background-attachment: fixed;
   color: #292929;
