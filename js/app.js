@@ -17,8 +17,8 @@ $(document).ready(function () {
   });
 });
 
-AOS.init({
-  easing: "ease",
-  duration: 3000,
-  once: true,
-});
+// AOS.init({
+//   easing: "ease",
+//   duration: 3000,
+//   once: true,
+// });
