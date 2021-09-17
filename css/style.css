@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "sans";
   color: #f8f8ff;
+  text-align: center;
   background: url("../img/intro-bg-dark.webp");
   background-size: cover;
   background-repeat: no-repeat;
