@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "sans";
   color: #f8f8ff;
-  background: url(../img/intro-bg-dark.webp);
+  background: url("../img/intro-bg-dark.webp");
   transition: 0.5s;
 }
 
