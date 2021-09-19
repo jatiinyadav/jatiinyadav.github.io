@@ -6,7 +6,7 @@ body {
   background: url("../img/Dark-Mode-Bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   transition: 0.5s;
 }
 
@@ -14,7 +14,7 @@ body.night {
   background: url("../img/Light-Mode-Bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: #292929;
   transition: 0.9s;
 }
