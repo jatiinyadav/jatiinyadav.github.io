@@ -3,15 +3,18 @@ body {
   font-family: "sans";
   color: #f8f8ff;
   text-align: center;
-  background: url("../img/intro-bg-dark.webp");
+  background: url("../img/Dark-Mode-Bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   transition: 0.5s;
 }
 
 body.night {
-  background: url("../img/intro-bg-light.webp");
+  background: url("../img/Light-Mode-Bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   color: #292929;
   transition: 0.9s;
 }
