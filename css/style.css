@@ -11,7 +11,7 @@ body {
 }
 
 body.night {
-  background: url("../img/Background-3.svg") 0 0 / cover;
+  background: url("../img/intro-bg-light.webp");
   color: #292929;
   transition: 0.9s;
 }
