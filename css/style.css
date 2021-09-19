@@ -11,7 +11,7 @@ body {
 }
 
 body.night {
-  background: url("../img/intro-bg-light.webp");
+  background: url("../img/Background-3.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -125,7 +125,7 @@ body {
   border-bottom: 5px solid tomato;
   border-right: 5px solid tomato;
   transform: rotate(45deg);
-  margin: -10px;
+  margin: -5px;
   animation: animate 2s infinite;
 }
 .arrow span:nth-child(2) {
@@ -198,15 +198,6 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.dp {
-  flex: 1;
-  margin-right: 3rem;
-}
-
-.sanam {
-  flex: 1;
 }
 
 .profile-image {
@@ -352,11 +343,6 @@ img {
 /* MY TOOLS SECTION STARTS */
 
 #myTools {
-  width: 100%;
-  max-width: 120rem;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
 }
 
@@ -422,11 +408,11 @@ img {
   }
 }
 
-body.night .container .projects-cards .align-flex {
+/* body.night .container .projects-cards .align-flex {
   background: #f8f8ff;
   box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
     0 5px 15px 0 rgba(37, 44, 97, 0.15);
-}
+} */
 
 .container .projects-cards .align-flex .header-img {
   object-fit: cover;
@@ -439,10 +425,6 @@ body.night .container .projects-cards .align-flex {
 
 .container .projects-cards .align-flex .projects-info {
   text-align: left;
-}
-
-.fa-youtube {
-  color: red;
 }
 
 .projects-items {
@@ -477,37 +459,13 @@ body.night .container .projects-cards .align-flex {
   height: 90%;
 }
 
-.projects-details {
-  margin-right: 2rem;
-}
-
-.projects-items .yt-link {
-  flex: 1;
-  margin-right: 2rem;
-}
-
-.projects-items:last-child {
-  margin-bottom: 0;
-}
-
 @media (max-width: 900px) {
   .container {
     width: 90%;
   }
-
-  iframe {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
   .projects-items {
     flex-direction: column;
     margin-bottom: 2rem;
-  }
-  .projects-items .yt-link {
-    margin-right: 0rem;
-  }
-  .projects-details {
-    margin-right: 0rem;
   }
 }
 
@@ -763,17 +721,6 @@ body.night .container .projects-cards .align-flex {
 
 /* TIMELINE RESPONSIVE ENDS */
 
-/* VIDEO RESPONSIVE STARTS */
-
-@media only screen and (max-width: 600px) {
-  video {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* VIDEO RESPONSIVE ENDS */
-
 /*CONTACT FORM STARTS */
 
 .contact {
@@ -818,11 +765,6 @@ a {
   }
 }
 
-/* @media only screen and (max-width: 600px) {
-  #contact .timeline-section p {
-    font-size: 1.5rem;
-  }
-} */
 /* Contact Form Responsive End */
 
 /* Footer Starts */
@@ -837,25 +779,6 @@ footer {
 }
 
 /* Footer Ends */
-
-/* .togglemenu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  min-width: 40px;
-  height: 40px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: 0.5s;
-  z-index: 10;
-}
-
-.togglemenu::before {
-  content: "";
-  color: #ffffff;
-  line-height: 40px;
-} */
 
 .sidebar {
   position: fixed;
@@ -974,18 +897,6 @@ ul li .menu:hover:before {
 .close-sidebar:after {
   transform: rotate(-45deg);
 }
-
-/* .close-sidebar1 {
-  top: 4%;
-}
-
-.close-sidebar2 {
-  top: 6%;
-}
-
-.close-sidebar3 {
-  top: 8%;
-} */
 
 .progress-wrap {
   position: fixed;
