@@ -188,7 +188,6 @@ section {
   height: 100%;
   margin: 0 auto;
   position: relative;
-  text-align: center;
 }
 
 .container .projects-here {
@@ -489,235 +488,73 @@ img {
   font-size: 1.8rem;
 }
 
-#resume {
-  /* background: url(img/bg1.png); */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#resume .resume-header {
-  text-align: center;
-}
-
-#resume .resume-header h1 {
-  font-family: "sans";
-  letter-spacing: 0.1rem;
-}
-
-#resume .resume-header h2 {
-  font-family: "sans";
-  letter-spacing: 0.2rem;
-}
-
-#resume .timeline-wrap {
-  border-radius: 0.5%;
+.timeline {
+  padding: 25px 50px;
   position: relative;
-  margin-top: 1.5rem;
-  margin-bottom: 6rem;
-}
-
-#resume .timeline-wrap::before {
-  content: "";
-  /* display: block; */
-  width: 3px;
-  height: 100%;
-  background: /*rgba(0, 0, 0, 0.1)*/ tomato;
-  position: absolute;
-  left: 28.7%;
-  border-radius: 1rem;
-  top: 0;
-}
-
-#resume .timeline-block {
-  position: relative;
-  padding-top: 1.5rem;
-}
-
-#resume .timeline-ico {
-  height: 2rem;
-  width: 2rem;
-  line-height: 1.8rem;
-  background: #313131;
-  border-radius: 50%;
-  text-align: center;
-  color: #ffffff;
-  position: absolute;
-  left: 30.8%;
-  top: 1.1rem;
-  margin-left: -2.3rem;
-}
-
-#resume .timeline-ico i {
-  position: relative;
-  left: 0.05rem;
-  top: 0.2rem;
-}
-
-#resume .timeline-header {
-  float: left;
-  width: 30%;
-  font-size: 1rem;
-  text-align: right;
-}
-
-#resume .timeline-header h3 {
-  margin-bottom: 0;
-}
-
-#resume .timeline-header h1 {
-  margin-bottom: 0;
-}
-
-#resume .timeline-header p {
-  font-family: "sans";
-  font-size: 1.1rem;
-  padding-right: 2.5rem;
-  color: #888888;
-}
-
-#resume .timeline-content {
   text-align: left;
-  margin-left: 28%;
-  padding-left: 60px;
-  padding-right: 70px;
-
-  font-family: "sans";
 }
 
-#resume .timeline-content h4 {
-  color: tomato;
-  letter-spacing: 0.05rem;
-  position: relative;
-  padding-bottom: 0.7rem;
-}
-
-#resume .timeline-content p {
-  padding-top: 1.5rem;
-  font-weight: unset;
-}
-
-#resume .timeline-content h4::after {
+.timeline:before {
   content: "";
-  display: block;
-  height: 3px;
-  width: 50px;
-  background: grey;
   position: absolute;
-  top: 2rem;
-  bottom: 0;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: tomato;
+  border-radius: 1rem;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.timeline-details {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.timeline-details .title {
+  margin-bottom: 0.5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+.timeline-details .title:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid salmon;
+  background: black;
+  border-radius: 100%;
+  top: 15%;
+  right: -8px;
+}
+.timeline-details .title h3 {
+  margin: 0;
+  font-size: 120%;
+}
+.timeline-details .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.timeline-details .timeline-info {
+  float: right;
+  width: 66%;
+  text-align: left;
+  padding-left: 30px;
 }
 
-/* TIMELINE RESPONSIVE STARTS */
-
-@media only screen and (max-width: 1024px) {
-  #resume .timeline-ico {
-    left: 17.8rem;
-  }
-  #resume .timeline-header {
-    padding-right: 15px;
-  }
-  #resume .timeline-header h3 {
-    font-size: 1.8rem;
-  }
-  #resume .timeline-header p {
-    font-size: 1.4rem;
-  }
-  #resume .timeline-content {
-    padding-left: 50px;
-  }
+.timeline-details .timeline-info h3 {
+  padding-bottom: 1rem;
 }
 
-@media only screen and (max-width: 1004px) {
-  #timeline-description {
-    margin-left: 2rem;
-  }
-  #resume .timeline-wrap::before {
-    left: -1rem;
-  }
-  #resume .timeline-ico {
-    left: 0.4rem;
-  }
-  #resume .timeline-header {
-    float: none;
-    width: auto;
-    padding-right: 15px;
-    text-align: left;
-  }
-  #resume .timeline-header h3 {
-    font-size: 2rem;
-  }
-  #resume .timeline-header p {
-    font-size: 1.5rem;
-    margin-left: -0rem;
-    margin-bottom: 1.5rem;
-  }
-  #resume .timeline-content {
-    margin: 0;
-  }
-  #resume .timeline-content p {
-    font-size: 1rem;
-  }
-  #resume .timeline-content h4 {
-    padding-bottom: 0;
-    padding-top: 2.1rem;
-    margin-bottom: 0.6rem;
-    font-size: 1.3rem;
-  }
-  #resume .timeline-content h4::after {
-    bottom: auto;
-    top: 0;
-  }
-  #resume .timeline-header,
-  #resume .timeline-content {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+.timeline-details .spacing {
+  margin-bottom: 2rem;
 }
-
-@media only screen and (max-width: 480px) {
-  #resume .resume-header h2 {
-    font-size: 2.2rem;
-  }
-  #resume .timeline-wrap::before {
-    left: 1.8rem;
-  }
-  #resume .timeline-ico {
-    height: 2.7rem;
-    width: 2.7rem;
-    line-height: 3.6rem;
-    left: 2.4rem;
-    margin-left: -1.8rem;
-    font-size: 1.5rem;
-  }
-  #resume .timeline-ico i {
-    height: 2.5rem;
-    width: 2.5rem;
-    line-height: 3.6rem;
-    top: -0.35rem;
-    left: 1rem;
-    margin-left: -1.8rem;
-    font-size: 1.5rem;
-  }
-  #resume .timeline-header,
-  #resume .timeline-content {
-    padding-left: 4rem;
-    padding-right: 1rem;
-  }
-  .timeline-description {
-    padding-right: 1rem;
-    padding-left: 0.4rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #resume .timeline-section p {
-    font-size: 1.5rem;
-  }
-}
-
-/* TIMELINE RESPONSIVE ENDS */
 
 /*CONTACT FORM STARTS */
 
@@ -802,7 +639,6 @@ ul {
 
 ul li {
   list-style: none;
-  text-align: center;
   transition-delay: 2s;
 }
 
