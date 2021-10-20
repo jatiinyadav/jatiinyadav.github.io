@@ -387,7 +387,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 3.5rem;
 }
 
 .container .projects-cards .align-flex {
@@ -453,7 +453,6 @@ img {
 }
 .projects-header .header-images img {
   width: 35px;
-  height: 90%;
 }
 
 @media (max-width: 900px) {
