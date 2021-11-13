@@ -568,8 +568,11 @@ img {
 }
 
 .contact-description {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 table {
@@ -586,13 +589,16 @@ a {
 
 /* Contact Form responsive */
 
+@media screen and (max-width: 768px) {
+  .contact-description {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   table {
     width: 100%;
     font-size: 0.8rem;
-  }
-  .contact-description {
-    width: 100%;
   }
   #contact .timeline-section p {
     font-size: 1.5rem;
