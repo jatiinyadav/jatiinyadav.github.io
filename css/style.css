@@ -178,6 +178,10 @@ section {
   padding: 4rem 0;
 }
 
+#contact {
+  padding-bottom: 1rem;
+}
+
 #about {
   height: 100%;
 }
