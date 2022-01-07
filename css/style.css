@@ -369,6 +369,7 @@ img {
   width: 90px;
 }
 
+
 /* MY TOOLS SECTION ENDS */
 
 /* MY TOOLS RESPONSIVE STARTS */
@@ -580,7 +581,7 @@ table {
 
 a {
   padding: 0.5rem;
-  color: #000;
+  text-decoration: none;
   cursor: pointer;
 }
 /* Contact Form End */
