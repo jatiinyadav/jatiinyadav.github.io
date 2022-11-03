@@ -17,11 +17,6 @@ body.night {
   transition: 0.9s;
 }
 
-a{
-  background-color: black;
-  text-decoration: none;
-}
-
 body.night .intro-bg .text-content h2 {
   color: #1c1c1c;
 }
@@ -261,6 +256,10 @@ img {
   /* height: 5rem; */
   border-radius: 50%;
   color: #000;
+}
+
+.intro-social li i {
+  color: black;
 }
 
 .intro-social li a:visited {
@@ -590,8 +589,6 @@ table {
 
 a {
   padding: 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
 }
 /* Contact Form End */
 
